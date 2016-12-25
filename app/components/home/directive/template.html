@@ -1,0 +1,13 @@
+<div style="position:relative">
+	<!-- Highlighter -->
+	<div style="float:left;position:absolute;top:3px;left:0px;z-index:-1px;height:100%;">
+		<div style="height:10px;float:left;margin-bottom:16px;" ng-repeat="word in output track by $index">
+			<div style="float:left;background-color:{{color[($index)]}};color:{{color[($index)]}}">{{word}}</div>
+			<div style="float:left;">&nbsp</div>
+		</div>
+	</div>
+	<!-- Input -->
+	<md-input-container style="margin:0px;padding:0px;width:100%;">
+		<textarea type="text" style="width:100%;margin:0px;padding:0px;background-color:transparent;" ng-model="input"/>
+	</md-input-container>
+</div>

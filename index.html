@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="app" ng-cloak>
+<head>
+	<title>Modified chips</title>
+	<link rel="stylesheet" href="./assets/imports/angular-material/angular-material.css">
+    <link rel="stylesheet" type="text/css" href="./assets/imports/nvd3/build/nv.d3.css">
+</head>
+<body ng-controller="mainController">
+	<smart-input check-list="['samsung','infistart']" highlight="#64FFDA"/>{{input}}
+</body>
+
+<!--Angular libraries -->
+<script src="./assets/imports/angular/angular.js"></script>
+
+<!-- Material libraries -->
+<script src="./assets/imports/angular-aria/angular-aria.js"></script>
+<script src="./assets/imports/angular-animate/angular-animate.js"></script>
+<script src="./assets/imports/angular-material/angular-material.js"></script>
+
+<!-- Custom scripts -->
+<script type="text/javascript" src="./app/app.js"></script>
+<script type="text/javascript" src="./app/modules.js"></script>
+<script type="text/javascript" src="./app/components/home/controller/controller.js"></script>
+<script type="text/javascript" src="./app/components/home/directive/directive.js"></script>
+
+</html>
